@@ -59,7 +59,7 @@ const notify = () => {
       theme: "colored",
     });
   } else {
-    toast.success('Form is valid!', {
+    toast.success('Your vote is valid', {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
@@ -114,11 +114,11 @@ const Contact = () => {
     const res = await fetch("https://votes-117b0-default-rtdb.firebaseio.com/UserData.json"
     ,options)
     console.log(res)
-    if (res){
-      alert ('data stored')
-      }else{
-        alert('erroure')
-      }
+    // if (res){
+    //   alert ('data stored')
+    //   }else{
+    //     alert('erroure')
+    //   }
       }
 
 

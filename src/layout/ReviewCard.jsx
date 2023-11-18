@@ -4,9 +4,11 @@ import { FaStar } from "react-icons/fa";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+ 
+
 
 const notify = () => {
-  toast.info('Wow so easy!', {
+  toast.info('Please register to confirm your vote !', {
     position: "top-center",
     autoClose: 3000,
     hideProgressBar: false,
@@ -33,10 +35,10 @@ const ReviewCard = (props) => {
 
         <div className="flex flex-row justify-center py-6 text-yellow-400">
           {Array.from({ length: rating }, (_, index) => (
-            <FaStar key={index} size={25} />
+            <FaStar key={index} size={30} />
           ))}
           {Array.from({ length: 5 - rating }, (_, index) => (
-            <FaStar key={index} size={25} className="text-slate-400" />
+            <FaStar key={index} size={30} className="text-slate-400" />
           ))}
         </div>
 
